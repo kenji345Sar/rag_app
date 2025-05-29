@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RAG QA</title>
+</head>
+<body>
+    <h1>社内ドキュメントQA</h1>
+    <form method="POST">
+        <input type="text" name="question" placeholder="質問を入力してください" style="width:300px;" required>
+        <button type="submit">送信</button>
+    </form>
+    {% if answer %}
+    <h3>回答：</h3>
+    <p>{{ answer }}</p>
+    {% endif %}
+</body>
+</html>
